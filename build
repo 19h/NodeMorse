@@ -1,0 +1,7 @@
+#!/bin/bash
+git clone --recursive git://github.com/hanshuebner/node-hid.git
+cd node-hid ; cd src
+node-waf configure build ; mv ../src ../../hid
+cd .. ; rm -rf node-hid/
+clear
+echo "Successfully build. Read the ReadMe, if in trouble."
