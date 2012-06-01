@@ -26,7 +26,7 @@ var Morse = {
         return void new Init;
 })(function () {
         Morse.Init(function () { // load devices
-                v = $$$("./devices/devices");
+                v = $$$("./drivers/drivers");
                 for (i in v.devices) Morse.Devices.ntrfcs[v.devices[i][1].id.vendor + ":" + v.devices[i][1].id.product] = v.devices[i];
         });
         Morse.Init(function () { // detect devices

@@ -4,5 +4,8 @@ cd node-hid ; cd src
 echo "exports.hid = require('HID');" > hid.js
 node-waf configure build ; mv ../src ../../hid
 cd .. ; rm -rf node-hid/
-clear
+echo "===================================================="
+echo ""
 echo "Successfully build. Read the ReadMe, if in trouble."
+echo ""
+echo "===================================================="
