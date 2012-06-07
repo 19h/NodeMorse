@@ -1,4 +1,4 @@
-var HID = require('HID');
+var HID = hid = require("./hid/hid").hid;
 
 var devices = new HID.devices(1452, 781);
 var hid;
